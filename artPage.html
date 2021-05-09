@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Generative Art Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+          <!--jQuery must also be linked for Bootstrap to function-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+        <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <!--Anime js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 id="welcome">Welcome to the Gallery<br>Choose an Exhibit</h1>
+                </div>
+            </div>
+            <div class="row galleries">
+                <div class="col-sm-3">
+                    <h1>3D Sphere of Points</h1>
+                </div>
+                <div class="col-sm-3">
+                    <h1>Animated generative art in multi-colour</h1>
+                </div>
+                <div class="col-sm-3">
+                    <h1>Smoke Version 5: Breathing Circles in Time</h1>
+                </div>
+                <div class="col-sm-3">
+                    <h1>Generative art from rectangleworld</h1>
+                </div>
+            </div>
+            <div class="row links">
+                <!--Instruction on dropdowns taken from https://www.w3schools.com/css/css_dropdowns.asp-->
+                <div class="col-sm-3 SphereDropdown">
+                    <span><a href="assets/3dSphereofPoints/3dSphereofPoints.html" class="exhibits"><img src="assets/imgs/Ellipse.png" alt="art piece"></a></span>
+                    <div class="SphereContent">
+                        <!--Image taken of 3D Sphere of Points-->
+                        <img src="assets/3dSphereofPoints/imgs/3dSphere.png" alt="3D Sphere of Points">
+                        <p>Shapes take life in 3d. Watch as a sphere and cube turn together. Adjust their sizes to see how they change.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 mcDropdown">
+                    <span><a href="assets/multiColor/multiColor.html" class="exhibits"><img src="assets/imgs/Ellipse.png" alt="art piece"></a></span>
+                    <div class="mcContent">
+                        <!--Image taken of Phil Nash's work-->
+                        <img src="assets/multiColor/imgs/multiColorLines.png" alt="multi color lines by Phil Nash">
+                        <p>An array of multicolor lines changing before you. All made with simple html/css/js. Enter to see the talents of Phil Nash and to learn what's possible with basic generative art.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 smokeDropdown">
+                    <span><a href="assets/smokeV5/smokeV5.html" class="exhibits"><img src="assets/imgs/Ellipse.png" alt="art piece"></a></span>
+                    <div class="smokeContent">
+                        <!--Image taken of Smoke Version 5-->
+                        <img src="assets/smokeV5/imgs/smokeV5.png" alt="smoke version 5 by James">
+                        <p>Smoke Version 5: Breathing Vircles in Time presents a viewer with a live image of something that mimics the appearance of smoke. Change some variables and make some smoke of your own!</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 rectangleDropdown">
+                    <span><a href="assets/rectangleArt/rectangleArt.html" class="exhibits"><img src="assets/imgs/Ellipse.png" alt="art piece"></a></span>
+                    <div class="rectangleContent">
+                        <!--Image taken of Generative art from rectangleworld-->
+                        <img src="assets/rectangleArt/imgs/rectangleWrld.png" alt="Generative art from rectangleworld">
+                        <p>Generative art from rectangleworld showcases the unique changing nature of generative art at a slower pace than other pieces. Have fun adjusting the variables and leave the gallery with a souvenir!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

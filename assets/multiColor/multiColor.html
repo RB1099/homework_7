@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Art from https://codepen.io/philnash/pen/wmermr-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Generative Art Gallery</title>
+        <!--jQuery must also be linked for Bootstrap to function-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+        <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/multiColor.css" />
+        <script type="text/javascript" src="js/multiColor.js" async></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row taskbar">
+                <div class="col-sm-1">
+                    <br><a href="../../artPage.html" id="#backArrow"><img src="../imgs/LeftArrow.png" alt="Back Arrow"></a>
+                </div>
+                <div class="col-sm-11">
+                    <h1 id="title">Animated generative art in multi-colour</h1>
+                    <h6 id="author">Phil Nash</h6>
+                </div>
+            </div>
+            <!--Dropdown code taken from https://www.w3schools.com/css/css_dropdowns.asp-->
+            <div class="row">
+                <div class="col-sm-2 sidebar">
+                    <br>Step<br><div class="stepDropdown">
+                        <span><input id="var1" value="20"></span>
+                        <div class="stepContent">
+                            <p>Change the number of lines. The lower the number the higher the number of lines and vice versa.</p>
+                        </div>
+                    </div>
+                    <button onclick="updtVar1()" id="var1btn">Update</button><br><br><br>
+                    Randomness<br>
+                    <div class="randomDropdown">
+                        <span><input id="var2" value="60"></span>
+                        <div class="randomContent">
+                            <p>Change the amount of movement for the lines. The lower the number the lesser the movement.</p>
+                        </div>
+                    </div>
+                    <button onclick="updtVar2()" id="var2btn">Update</button><br><br><br>
+                    Color Space<br>
+                    <div class="colorDropdown">
+                        <span><input id="var3" value="120"></span>
+                        <div class="colorContent">
+                            <p>Change the way the colors move across the screen by setting their initial spacing.</p>
+                        </div>
+                    </div>
+                    <button onclick="updtVar3()" id="var3btn">Update</button>
+                    <br><br><br>Check out the code:<br> <a href="https://codepen.io/philnash/pen/wmermr" target="_blank">https://codepen.io/philnash/pen/wmermr</a>
+                </div>
+                <div class="col-sm-10">
+                    <canvas id="the-art"></canvas>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

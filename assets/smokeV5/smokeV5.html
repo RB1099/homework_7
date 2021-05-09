@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Art from https://codepen.io/superbuggy/pen/JaVVOE-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Generative Art Gallery</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+        <script src="https://raw.githubusercontent.com/IDMNYU/p5.js-func/master/lib/p5.func.js"></script>
+        <!--jQuery must also be linked for Bootstrap to function-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+        <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/smokeV5.css" />
+        <script type="text/javascript" src="js/smokeV5.js" async></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row sidebar">
+                <div class="col-sm-2">
+                    <br><a href="../../artPage.html" id="#backArrow"><img src="../imgs/LeftArrow.png" alt="Back Arrow"></a>
+                </div>
+                <div class="col-sm-10">
+                    <h1 id="title">Smoke Version 5: Breathing Circles in Time</h1>
+                    <h6 id="author">James</h6><br>
+                    <div id="vars">
+                        <div class="row">
+                            <!--Dropdown code from https://www.w3schools.com/css/css_dropdowns.asp-->
+                            <div class="col-sm-3">
+                                Smoke Circle Size 
+                                <div class="scsDropdown">
+                                    <span><input id="var1" value="10"></span>
+                                    <div class="scsContent">
+                                        <p>Change the size of each smoke circle. The lower the number the lower the size of each circle and the less rows and columns the image takes and vice versa.</p>
+                                    </div>
+                                </div>
+                                <br><button onclick="updtVar1()" id="var1btn">Update</button>
+                            </div>
+                            <div class="col-sm-5">
+                                Time Offset
+                                <div class="timeDropdown">
+                                    <span><input id="var2" value="60"></span>
+                                    <div class="timeContent">
+                                        <p>Adjust the time offset used for the generation of the smoke circles to change the patterns present on the screen.</p>
+                                    </div>
+                                </div>
+                                <br><button onclick="updtVar2()" id="var2btn">Update</button>
+                            </div>
+                            <div class="col-sm-2">
+                                Check out the code:<br><a href="https://codepen.io/superbuggy/pen/JaVVOE" target="_blank">https://codepen.io/superbuggy/pen/JaVVOE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

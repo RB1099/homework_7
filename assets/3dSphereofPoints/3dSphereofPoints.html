@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Art from https://codepen.io/sha99y8oy/pen/LNRaQV-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Generative Art Gallery</title>
+        <!--jQuery must also be linked for Bootstrap to function-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+        <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.23/p5.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/3dSphereofPoints.css" />
+        <script type="text/javascript" src="js/3dSphereofPoints.js" async></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row taskbar">
+                <div class="col-sm-2">
+                    <br><a href="../../artPage.html" id="#backArrow"><img src="../imgs/LeftArrow.png" alt="Back Arrow"></a>
+                </div>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <h1 id="title">3D Sphere of Points</h1>
+                            <h6 id="author">shaggy</h6><br>
+                        </div>
+                    </div>
+                    <!--Dropdown from https://www.w3schools.com/css/css_dropdowns.asp-->
+                    <div class="row">
+                        <div class="col-sm-3 BxSzDropdown">
+                            <span>Box Size</span> <input id="var1" value="205">
+                            <button onclick="updtVar1()" id="var1btn">Update</button>
+                            <div class="BxSzContent">
+                                <p>Adjust the size of the cube around the sphere.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 SphRadDropdown">
+                            <span>Sphere Radius</span> <input id="var2" value="184.5">
+                            <button onclick="updtVar2()" id="var2btn">Update</button>
+                            <div class="SphRadContent">
+                                <p>Adjust the size of the sphere inside the cube.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2">
+                            Check out the code:<br><a href="https://codepen.io/sha99y8oy/pen/LNRaQV" target="_blank">https://codepen.io/sha99y8oy/pen/LNRaQV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    <!-- 
+                    Based on script from
+                    'Generative Art. A Practical Guide Using Processing' - Matt Pearson
+
+                    https://www.manning.com/books/generative-art
+
+                    https://www.amazon.co.uk/Generative-Art-Matt-Pearson/dp/1935182625
+
+                    5.3.3 'The wrong way to draw a sphere'
+
+                    -->
+        </div>
+    </body>
+</html>

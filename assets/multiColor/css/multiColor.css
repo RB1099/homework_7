@@ -1,0 +1,100 @@
+/*https://codepen.io/philnash/pen/wmermr*/
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    
+  }
+  
+  canvas {
+    display: block;
+  }
+
+#title{
+    text-align:right;
+    color:white;
+    margin-top:-0.005em;
+}
+#author{
+    text-align:right;
+    color:#7c7c7c;
+}
+
+.taskbar{
+    padding-bottom:0.5em;
+}
+
+.sidebar{
+  color:white;
+}
+.sidebar button, .sidebar input{
+  color:black;
+}
+  
+
+
+/*Dropdown code taken from https://www.w3schools.com/css/css_dropdowns.asp
+Dropdown for information about step variable*/
+.stepDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.stepContent {
+  display: none;
+  position: absolute;
+  background-color: #2f2f2f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.stepDropdown:hover .stepContent {
+  display: block;
+}
+
+/*Dropdown for information about random variable*/
+.randomDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.randomContent {
+  display: none;
+  position: absolute;
+  background-color: #2f2f2f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.randomDropdown:hover .randomContent {
+  display: block;
+}
+
+/*Dropdown for information about color space variable*/
+.colorDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.colorContent {
+  display: none;
+  position: absolute;
+  background-color: #2f2f2f;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.colorDropdown:hover .colorContent {
+  display: block;
+}
